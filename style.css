@@ -1,0 +1,627 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+.card, .card-contact, .right, .shape {
+  will-change: transform;
+}
+
+}
+
+header {
+    height: 80px; /* تحديد ارتفاع ثابت للهيدر */
+    display: flex;
+    align-items: center; /* هذا السطر يوسط كل العناصر رأسياً (بالطول) */
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    overflow: hidden; /* يمنع أي شيء من الخروج بره الـ 80px */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/*.contant{
+  display: flex;
+  align-items: center;
+  
+}*/
+
+.logo {
+    display: flex;
+    align-items: center; /* يوسط النص مع الصورة */
+    height: 100%; /* يجعل الحاوية تأخذ طول الهيدر */
+    gap: 40px;
+}
+
+.logo img {
+    height: 120px; /* صغر الرقم ده لو لسه طالعة بره */
+    width: auto; /* يحافظ على أبعاد الصورة */
+    object-fit: contain;
+    margin-left: 40px; /* تأكد إنه مفيش margin بيزقها لبره */
+}
+
+ /*h1 {
+    margin: 0 0 0 10px; /* مسافة بسيطة بين الصورة والنص */
+  /*  line-height: 1; /* يضمن أن النص لا يأخذ مساحة طولية زائدة */
+
+
+
+
+/*header{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
+  height: 85px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: 13px 0px 17px rgba(1, 1, 1, 15%);
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img{
+  width: 110px;
+  height: 87px;
+}
+*/
+ span{
+  color: orangered;
+}
+
+ /*h1 a{
+  color: #333333;
+  text-decoration: none;
+}
+
+ h1{
+  padding-left: 20px;
+  font-size: 1.96em;
+  font-weight: 700;
+  letter-spacing:1px;
+}*/
+
+
+
+.logo a{
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  margin-right: 23px;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+
+nav{
+  display: flex;
+}
+
+nav a{
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  margin-right: 23px;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.input{
+  width: 500px;
+  height: 35px;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+.s-icon{
+  font-size: 20px;
+}
+
+.sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-upp{
+background-color: orange;
+border-radius: 18px;
+padding: 10px;
+}
+
+section{
+  padding: 100px 200px;
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .left h2{
+  color: orange;
+  font-size: 3.7em;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.p{
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main .left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right{
+  width: 600px;
+  height: 600px;
+  border-radius: 30% 70% / 50% 50%;
+  background-color: #3a6cf4;
+}
+
+.shape{
+  width: 600px;
+  height: 600px;
+  border-radius: 50% 10% 50% 10%;
+  background-color: #3a6cf4;
+  background: url(EMeKAplDN8er.jpg.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.card{
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 10em;
+  width: 30em;
+  overflow: hidden;
+  border-radius: 18px;
+  margin: 20px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+}
+
+.c-img img{
+  width: 100%
+}
+
+.c-info{
+  margin: 10px;
+}
+
+.c-info h4{
+  font-size: 1.36em;
+  opacity: 0.8;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.c-info p{
+  font-size: 1.56em;
+font-weight: 700;
+letter-spacing: 1px;
+margin: 10px;
+margin-left: 0;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+ /*all: unset;*/
+ color: rgba(1, 1, 1, 70%);
+ background-color: orange;
+ width: 100%;
+ height: 50px;
+ margin: 0 10px 10px 10px;
+ border-radius: 15px; 
+ /*border: 1px solid orange;*/
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  color: #333333;
+  font-size:2.2em;
+  font-weight:800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /*طريقة الترصيص*/
+  flex-wrap: wrap;
+}
+
+.card-contact{
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%); /*عشان يعمل ظل ويبرز الكارت أول خانه فوق وتحت التانيه يمين وشمال لو شمال -5*/
+/*الخانه التالته هي زي شفافية الظل او انتشاره يكون علي متسع قد ايه؟ والخانه الرابعه اللون والالفا دي الاوبيسيتي الشفافيه*/
+  padding: 25px;
+  margin: 15px;
+}
+
+.card-contact:hover{
+  transform:  scale(1.04) translateY(-20px);
+  transition: 0.47s ease;
+  border-radius: 15px;
+  will-change: transform;
+}
+
+.icon{
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.info h3{
+  color: black;
+  font-size: 1.2em;
+  font-weight:700;
+  margin: 10px;
+}
+
+.telme{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.telme:hover{
+  text-decoration: underline;
+  color: #3a6cf4;
+}
+
+.contact .icon{
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+} 
+
+.footer{
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span{
+  color: #3a6cf4;
+}
+
+.footer .social-icons a{
+  font-size: 1.4em;
+  padding: 0 12px 0 0 ;
+  color: #fff;
+}
+
+/* Hover */
+
+.contant-contact:hover{
+  background-color: rgba(140, 140, 140, 0.3);
+  border-radius: 20px;
+}
+
+.contact:hover{
+  background-color: rgba(140, 140, 140, 0.3);
+  box-shadow: 2px 14px 25px rgba(1, 1, 1, 10%);
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.3s ease;
+  will-change: transform;
+}
+
+.sign-inn:hover{
+  background-color: rgba(140, 140, 140, 0.3);
+box-shadow: 2px 14px 25px rgba(1, 1, 1, 10%);
+border-radius: 20px;
+padding: 10px;
+transition: 0.3s ease;
+}
+
+.sign-upp:hover{
+  box-shadow: 2px 9px 8px rgba( 255,150, 0, 70%);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.buy:hover{
+  background-color: rgba(140, 140, 140, 0.3);
+  box-shadow: 2px 14px 25px rgba(1, 1, 1, 10%);
+  border-radius: 50px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.07) ;
+  transition: 0.7s ease;
+  will-change: transform;
+}
+
+.card:hover .c-img{
+  background-color: black;
+}
+
+.card:hover .immg{
+  opacity: 0.7;
+  transition: 0.7s ease;
+}
+
+.button:hover{
+  transform: translateY(-9px);
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  box-shadow: 2px 10px 15px rgb(1, 1, 1);
+  transition: 0.7s ease;
+  will-change: box-shadow;
+}
+
+/* =========================================
+   Media Queries for FitWear Website (Fixed)
+   ========================================= */
+
+/* 1. For Laptops and Small Desktops (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 80px 100px;
+  }
+}
+
+/* 2. For Tablets and Large Mobile Phones (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  header {
+    height: auto;
+    min-height: 80px;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .logo {
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+    margin-left: 0;
+  }
+
+  .logo a.contact {
+    margin-right: 0;
+  }
+
+  .search {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+
+  nav a {
+    margin-right: 0;
+    font-size: 1.1em;
+  }
+
+  section {
+    padding: 60px 50px;
+  }
+
+  .main {
+    margin-top: 150px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .main .left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right {
+    width: 400px;
+    height: 400px;
+  }
+
+  .shape {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* 3. For Mobile Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  section {
+    padding: 40px 20px;
+    margin-top: 120px;
+  }
+
+  .main {
+    margin-top: 120px;
+  }
+
+  .main .left h2 {
+    font-size: 2.5em;
+  }
+
+  .right {
+    width: 300px;
+    height: 300px;
+  }
+
+  .shape {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-contact {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* 4. For Small Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 8px;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .logo a.contact {
+    display: none;
+  }
+
+  .search {
+    width: 90%;
+  }
+
+  .input {
+    height: 30px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.9em;
+  }
+
+  .sign-upp {
+    padding: 8px 15px;
+  }
+
+  section {
+    margin-top: 100px;
+  }
+
+  .main {
+    margin-top: 100px;
+    padding-top: 20px;
+  }
+
+  .main .left h2 {
+    font-size: 2em;
+  }
+
+  .main .p {
+    font-size: 1.1em;
+  }
+
+  .right {
+    width: 250px;
+    height: 250px;
+  }
+
+  .shape {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact .icon {
+    font-size: 3em;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .content {
+    flex-direction: column !important;
+  }
+}
+
+/* Interactive store layer — preserves the original FitWear visual identity. */
+.cart-badge{position:absolute;top:-9px;right:-12px;min-width:20px;height:20px;padding:2px 5px;border-radius:50%;background:#f39a00;color:#111;font-size:.72rem;font-weight:800;text-align:center;line-height:16px}.buy{position:relative}.cart-modal{position:fixed;inset:0;z-index:2000;visibility:hidden;pointer-events:none}.cart-modal.open{visibility:visible;pointer-events:auto}.cart-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.48);opacity:0;transition:opacity .25s ease}.cart-panel{position:absolute;top:0;right:0;width:min(440px,100%);height:100%;padding:24px;background:#fff;box-shadow:-8px 0 28px rgba(0,0,0,.2);transform:translateX(100%);transition:transform .3s ease;overflow:auto}.cart-modal.open .cart-backdrop{opacity:1}.cart-modal.open .cart-panel{transform:translateX(0)}.cart-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:14px}.cart-heading h2{font-size:1.35rem}.cart-close{border:0;background:none;font-size:2rem;cursor:pointer}.cart-item{display:flex;gap:12px;padding:16px 0;border-bottom:1px solid #eee}.cart-item img{width:74px;height:74px;object-fit:cover;border-radius:10px;background:#f5f5f5}.cart-item-info{display:flex;flex:1;flex-direction:column;gap:5px}.cart-item-info span{color:#666;font-size:.9rem}.quantity{display:flex;align-items:center;gap:9px}.quantity button{border:1px solid #ddd;background:#fafafa;border-radius:6px;cursor:pointer;padding:3px 9px}.quantity .remove-item{border:0;background:none;color:#d44;font-size:.78rem}.cart-empty{padding:42px 8px;text-align:center;color:#777}.cart-footer{display:grid;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid #eee}.whatsapp-order,.call-order{border:0;border-radius:12px;padding:13px;text-align:center;text-decoration:none;cursor:pointer;font-weight:700}.whatsapp-order{background:#20b858;color:#fff}.call-order{background:orange;color:#111}.fitwear-toast{position:fixed;left:50%;bottom:24px;z-index:2100;transform:translate(-50%,20px);opacity:0;padding:13px 18px;border-radius:12px;background:#111;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:.25s ease;pointer-events:none}.fitwear-toast.show{transform:translate(-50%,0);opacity:1}body.cart-open{overflow:hidden}.card[hidden]{display:none!important}@media(max-width:600px){.cart-panel{padding:18px}.fitwear-toast{width:calc(100% - 32px);text-align:center}}
